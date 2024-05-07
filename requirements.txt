@@ -1,6 +1,4 @@
-fitz==0.0.1.dev2
-ollama==0.1.9
-pandas==2.2.2
-PyMuPDF==1.24.2
-PyMuPDFb==1.24.1
-tqdm==4.66.4
+ollama
+pandas
+PyMuPDF
+tqdm
