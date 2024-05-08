@@ -2,3 +2,7 @@ ollama
 pandas
 PyMuPDF
 tqdm
+python-docx
+docx2txt
+Spire.Doc
+plum-dispatch

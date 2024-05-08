@@ -78,7 +78,17 @@ def process_documents(input_dir, lst_key_query,
         with open(questions_filename, 'r') as f:
             lst_fact_query = f.read().splitlines()
 
-    lst_doc_filename = os.listdir(input_dir)
+    lst_doc_filename = []
+    lst_extension = ['.pdf', '.docx']
+    for filename in os.listdir(input_dir):
+        is_valid = False
+        for ext in lst_extension:
+            if filename.endswith(ext):
+                is_valid = True
+        if is_valid:
+            lst_doc_filename.append(filename)
+
+    # lst_doc_filename = os.listdir(input_dir)
     lst_dict_res = []
     for filename in tqdm(lst_doc_filename):
         dict_res = {}
